@@ -1,0 +1,22 @@
+/* ==========================================================================
+   My Helper classes
+   ========================================================================== */
+/* line 4, ../scss/th_helpers.scss */
+html * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../scss/th_helpers.scss */
+body {
+  background-color: #000;
+  min-height: 100%;
+}
+
+/* line 15, ../scss/th_helpers.scss */
+a {
+  text-transform: none;
+  text-decoration: none;
+  color: inherit;
+}

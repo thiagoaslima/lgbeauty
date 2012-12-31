@@ -1,24 +1,181 @@
+@import "normalize";
+@import "h5bp_base";
+@import "h5bp_helpers";
+@import "h5bp_print";
+@import "th_helpers";
+@import "lgbeauty_variables";
+@import "compass";
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.logo {
-    h1 {
-        display: none;
+
+.content {
+    @extend %row;
+}
+
+body {
+    $fsz: 16;
+    background-color: darken(white,15%);
+    -webkit-box-shadow: 0 -2px 5px white;
+    box-shadow: 0 -2px 5px white;
+    min-height: 100%;
+}
+
+header {
+    $fsz: 16;
+    position: absolute;
+    left:0; right:0;
+    z-index: 99;
+
+    figure {
+        float:left;
+        @extend %clearfix;
+        background-color: darken(darkRed, 10%);
+        width: 112.5px;
+        height: 5em;
+        padding-top: 1em;
+        -webkit-transition: height .5s;
+        -moz-transition: height .5s;
+        -o-transition: height .5s;
+        -ms-transition: height .5s;
+        transition: height .5s;
+        
+
+        &:before {
+            content:"";
+            position: absolute;
+            top: 35%;
+            border-style: solid;
+            border-width: 3.5 * $fsz * 1px;
+            border-color: darken(darkRed, 10%);
+            border-bottom-width: 38px;
+            border-bottom-color: transparent;
+            z-index: -1;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+
+        img {
+            width: 85%;
+            display: block;
+            margin: 0 auto; 
+        }
+
+        h1 {
+            @extend %visuallyhidden;
+        }
+    }
+
+    nav {
+        font-family: $sans;
+        margin-left: 12em;
+
+        ul {
+            margin: 3.25em 0 0;
+            padding: 0;
+
+            li{
+                position: relative;
+                display: inline;
+                margin-right: 4.5em;
+                text-align: center;
+
+                span{
+                    position: absolute;
+                    left: 0; bottom: -10px;
+                    border-bottom: 1px solid darkRed;
+                    display: inline-block;
+                    width: 0;
+                }
+
+                &:hover {
+                    span{
+                        width: 100%;
+                    }
+                }
+
+                a {
+                    $fsz: 16;
+                    font-size: 13/$fsz * 1em;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    padding: 0 1em;
+                    color: darken(white, 15%);
+                    background-color: transparent;
+                    text-transform: uppercase;
+                    text-shadow: 0 3px 1px darkRed;
+                }
+            }
+        }
     }
 }
 
+#main {
+    font-size: 15/16 * 1em;
+    $fsz: 15;
 
+    position: absolute;
+        top: 0; bottom: 2em;
+        left:0; right:0;
+    padding-top: 4em;
+    background-image: url(/i/l1.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    min-height: 100%;
+    *height: 100%;
 
+    #halftone{
+        position: absolute;
+        top:0; bottom:0;
+        left:0; right:0;
+        background-image: url(/i/dots.png);
+    }
+}
 
+footer {
+    font-family: $sans;
+    font-size: 13/16 * 1em;
+    $fsz:13;
+    line-height: 30/$fsz * 1em;
 
+    background-color: darken(white,15%);
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 30/$fsz * 1em;
 
+    p {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
 
+    aside {
+        display: inline;
+        float:right;
+        height: 30/$fsz * 1em;
 
+        span {
+            margin-right: 0.5em;
+        }
 
+        img {
+            display: inline;
 
-
-
-
-
-
-
+            &.f {
+                height: 20px;
+            }
+            &.m {
+                height: 26px;
+            }
+            &.t {
+                height: 22px;
+            }
+        }
+    }
+}

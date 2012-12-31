@@ -1,0 +1,41 @@
+/* ==========================================================================
+   My Helper classes
+   ========================================================================== */
+html * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    min-height: 100%;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+%navInline {
+    display: inline;
+
+    &>ul{
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+
+    li {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+    }
+}
+
+%row {
+    width: 80%;
+    margin: 0 auto;
+}
