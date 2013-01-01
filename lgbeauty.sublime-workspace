@@ -4,6 +4,114 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"po",
+				"pos:r	position:relative"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"border-bott",
+				"border-bottom-width"
+			],
+			[
+				"border-b",
+				"border-bottom-color"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"bz",
+				"bgz	background-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"di",
+				"d-i	display: inline;"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"zoo",
+				"zoo	zoom: 1;"
+			],
+			[
 				"mi",
 				"mix	@mixin"
 			],
@@ -16,48 +124,20 @@
 				"margin-bottom"
 			],
 			[
-				"marg",
-				"margin-top"
-			],
-			[
 				"f",
 				"ff	font-family"
-			],
-			[
-				"padd",
-				"padding-top"
 			],
 			[
 				"fl",
 				"fl:l	float:left"
 			],
 			[
-				"in",
-				"inc	@include"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"i",
 				"italic"
 			],
 			[
-				"fo",
-				"font-style"
-			],
-			[
-				"fon",
-				"font-style"
-			],
-			[
 				"font",
 				"font-family"
-			],
-			[
-				"pa",
-				"padding-top"
 			],
 			[
 				"bor",
@@ -72,20 +152,12 @@
 				"tsh	text-shadow"
 			],
 			[
-				"po",
-				"pos:r	position:relative"
-			],
-			[
 				"cu",
 				"cur:p	cursor:pointer"
 			],
 			[
 				"tra",
 				"transparent"
-			],
-			[
-				"pad",
-				"padding-right"
 			],
 			[
 				"pos",
@@ -112,14 +184,6 @@
 				"border-top"
 			],
 			[
-				"tex",
-				"text-align"
-			],
-			[
-				"dis",
-				"display"
-			],
-			[
 				"tr",
 				"trs	transition"
 			],
@@ -140,16 +204,8 @@
 				"input	input - checkbox"
 			],
 			[
-				"text",
-				"text-transform"
-			],
-			[
 				"fw",
 				"fw:n	font-weight:normal"
-			],
-			[
-				"di",
-				"d-ib	display: inline-block;"
 			],
 			[
 				"br",
@@ -168,16 +224,8 @@
 				"verdeEscuro"
 			],
 			[
-				"paddin",
-				"padding-right"
-			],
-			[
 				"margt",
 				"margin-bottom"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"v",
@@ -232,10 +280,6 @@
 				"ext	@extend"
 			],
 			[
-				"ba",
-				"background-size"
-			],
-			[
 				"va",
 				"va:m	vertical-align:middle"
 			],
@@ -258,10 +302,6 @@
 			[
 				"img",
 				"img	img"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"la",
@@ -330,10 +370,6 @@
 			[
 				"text-",
 				"text-indent"
-			],
-			[
-				"padding",
-				"padding-left"
 			],
 			[
 				"bgi",
@@ -478,42 +514,6 @@
 			[
 				"q",
 				"qtde_nova"
-			],
-			[
-				"qtde",
-				"qtde_gravada"
-			],
-			[
-				"conta",
-				"contato"
-			],
-			[
-				"for",
-				"formas_contato"
-			],
-			[
-				"cont",
-				"container"
-			],
-			[
-				"update",
-				"updateHtml"
-			],
-			[
-				"new",
-				"newText"
-			],
-			[
-				"ne",
-				"newText"
-			],
-			[
-				"line",
-				"line_class"
-			],
-			[
-				"z",
-				"z-index"
 			]
 		]
 	},
@@ -523,7 +523,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4364,
+				"buffer_size": 3040,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 12,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,17 +539,45 @@
 			"file": "scss/main.scss",
 			"settings":
 			{
-				"buffer_size": 254,
-				"line_ending": "Unix"
+				"buffer_size": 4058,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/th_helpers.scss",
+			"settings":
+			{
+				"buffer_size": 683,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/lgbeauty_variables.scss",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 173.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
 			[
 				"theme",
 				"Snippet: Theme Head"
@@ -725,14 +761,6 @@
 			[
 				"cas",
 				"Convert Case: Title Case"
-			],
-			[
-				"lowe",
-				"Convert Case: Lower Case"
-			],
-			[
-				"case",
-				"Convert Case: Lower Case"
 			],
 			[
 				"tas",
@@ -943,7 +971,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 513.0
+		"width": 528.0
 	},
 	"console":
 	{
@@ -960,6 +988,11 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/dev/lgbeauty.dev/scss/normalize.scss",
+		"/C/xampp/htdocs/dev/lgbeauty.dev/css/normalize.css",
+		"/C/xampp/htdocs/dev/lgbeauty.dev/css/main.css",
+		"/C/xampp/htdocs/dev/lgbeauty.dev/scss/h5bp_helpers.scss",
+		"/C/xampp/htdocs/dev/lgbeauty.dev/scss/h5bp_print.scss",
 		"/C/xampp/htdocs/dev/lgbeauty.dev/config.rb",
 		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/C/Windows/System32/drivers/etc/hosts",
@@ -1082,12 +1115,7 @@
 		"/C/Users/Thiago/Desktop/Borgias S2/leg/e09.srt",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/08_agosto/clima/pecas/emkt/index.html",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/46_out-30/mail mkt/index.html",
-		"/C/Users/Thiago/Desktop/smail.php",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/2a turma/names.xml",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-config.php",
-		"/C/xampp/htdocs/dev/lvm.dev/php-errors.log",
-		"/C/Users/Thiago/Downloads/curriculo.xml",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos_templates.html"
+		"/C/Users/Thiago/Desktop/smail.php"
 	],
 	"find":
 	{
@@ -1105,6 +1133,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"darkRed",
+			"darkred",
+			"1px",
+			"px",
+			"inner",
+			".",
 			"visua",
 			"thlima",
 			"#worktitle",
@@ -1226,12 +1260,6 @@
 			"FFFFFF",
 			" bgcolor=\"#FFFFFF\"",
 			"name@yourdomain.com",
-			"First Last",
-			"name@yourdomain.com",
-			"taslima@2esdi.uerj.br",
-			"$mail",
-			"mail",
-			"name@yourdomain.com",
 			"First Last"
 		],
 		"highlight": true,
@@ -1255,7 +1283,7 @@
 			"</nome>/n<data>",
 			"e"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -1264,7 +1292,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1272,15 +1300,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 4364,
+						"buffer_size": 3040,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1469,
-								1469
+								1819,
+								1819
 							]
 						],
 						"settings":
@@ -1378,25 +1406,51 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 299.0,
+						"translation.y": 680.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scss/main.scss",
+					"file": ".gitignore",
 					"settings":
 					{
-						"buffer_size": 254,
+						"buffer_size": 12,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/main.scss",
+					"settings":
+					{
+						"buffer_size": 4058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3961,
+								3961
 							]
 						],
 						"settings":
@@ -1489,6 +1543,58 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/th_helpers.scss",
+					"settings":
+					{
+						"buffer_size": 683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								659,
+								659
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/lgbeauty_variables.scss",
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
