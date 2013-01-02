@@ -574,16 +574,16 @@ header figure h1 {
   width: 1px;
 }
 /* line 48, ../scss/h5bp_helpers.scss */
-header figure {
+#servicos div.header, header figure {
   *zoom: 1;
 }
 /* line 49, ../scss/h5bp_helpers.scss */
-header figure:before {
+#servicos div.header:before, header figure:before {
   content: " ";
   display: table;
 }
 /* line 53, ../scss/h5bp_helpers.scss */
-header figure:after {
+#servicos div.header:after, header figure:after {
   content: " ";
   display: table;
   clear: both;
@@ -710,13 +710,22 @@ body {
 }
 
 /* line 25, ../scss/main.scss */
+#servicos div.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #e1e1df;
+  background-color: rgba(214, 214, 214, 0);
+}
+
+/* line 33, ../scss/main.scss */
 header {
   position: absolute;
   left: 0;
   right: 0;
   z-index: 99;
 }
-/* line 31, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 header figure {
   float: left;
   background-color: #580000;
@@ -729,13 +738,13 @@ header figure {
   -ms-transition: height .5s;
   transition: height .5s;
 }
-/* line 45, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 header figure:before {
   content: "";
   position: absolute;
   top: 35%;
   border-style: solid;
-  border-width: 56px;
+  border-width: 48px;
   border-color: #580000;
   border-bottom-width: 38px;
   border-bottom-color: transparent;
@@ -746,30 +755,30 @@ header figure:before {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-/* line 62, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 header figure img {
   width: 85%;
   display: block;
   margin: 0 auto;
 }
-/* line 73, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 header nav {
   font-family: "Gudea", Tahoma, sans-serif;
   margin-left: 12em;
 }
-/* line 77, ../scss/main.scss */
+/* line 85, ../scss/main.scss */
 header nav ul {
   margin: 3.25em 0 0;
   padding: 0;
 }
-/* line 81, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 header nav ul li {
   position: relative;
   display: inline;
   margin-right: 4.5em;
   text-align: center;
 }
-/* line 87, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 header nav ul li span {
   position: absolute;
   left: 0;
@@ -778,11 +787,11 @@ header nav ul li span {
   display: inline-block;
   width: 0;
 }
-/* line 96, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 header nav ul li:hover span {
   width: 100%;
 }
-/* line 101, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 header nav ul li a {
   font-size: 0.8125em;
   font-weight: bold;
@@ -794,7 +803,7 @@ header nav ul li a {
   text-shadow: 0 3px 1px darkRed;
 }
 
-/* line 117, ../scss/main.scss */
+/* line 125, ../scss/main.scss */
 #main {
   font-size: 0.9375em;
   position: absolute;
@@ -810,7 +819,11 @@ header nav ul li a {
   min-height: 100%;
   *height: 100%;
 }
-/* line 133, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
+#main.servicos {
+  background-image: url(/i/r1.jpg);
+}
+/* line 145, ../scss/main.scss */
 #main #halftone {
   position: absolute;
   top: 0;
@@ -818,9 +831,10 @@ header nav ul li a {
   left: 0;
   right: 0;
   background-image: url(/i/dots.png);
+  background-size: 3px;
 }
 
-/* line 141, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 footer {
   font-family: "Gudea", Tahoma, sans-serif;
   font-size: 0.8125em;
@@ -832,35 +846,35 @@ footer {
   right: 0;
   height: 2.30769em;
 }
-/* line 152, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 footer p {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 158, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 footer aside {
   display: inline;
   float: right;
   height: 2.30769em;
 }
-/* line 163, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 footer aside span {
   margin-right: 0.5em;
 }
-/* line 167, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 footer aside img {
   display: inline;
 }
-/* line 170, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 footer aside img.f {
   height: 20px;
 }
-/* line 173, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 footer aside img.m {
   height: 26px;
 }
-/* line 176, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 footer aside img.t {
   height: 22px;
 }
