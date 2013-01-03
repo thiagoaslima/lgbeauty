@@ -4,7 +4,7 @@
 @import "h5bp_print";
 @import "th_helpers";
 @import "lgbeauty_variables";
-@import "compass";
+// @import "compass";
 
 /* ==========================================================================
    Author's custom styles
@@ -22,53 +22,24 @@ body {
     min-height: 100%;
 }
 
-#servicos div.header {
-    @extend %clearfix;
-    position: absolute;
-    left:0; right:0;
-    background-color: rgb(225, 225, 223);
-    background-color: rgba(214, 214, 214, 0.5);
-}
-
 header {
     $fsz: 16;
-    position: absolute;
-    left:0; right:0;
+    position: fixed;
+    top: 0; left: 0; right: 0;
     z-index: 99;
+    padding: 20px 0;
+    @extend %clearfix;
 
     figure {
-        float:left;
-        @extend %clearfix;
-        background-color: darken(darkRed, 10%);
-        width: 112.5px;
-        height: 5em;
-        padding-top: 1em;
-        -webkit-transition: height .5s;
-        -moz-transition: height .5s;
-        -o-transition: height .5s;
-        -ms-transition: height .5s;
-        transition: height .5s;
-        
-
-        &:before {
-            content:"";
-            position: absolute;
-            top: 35%;
-            border-style: solid;
-            border-width: 3.5 * $fsz * 1px;
-            border-color: darken(darkRed, 10%);
-            border-bottom-width: 38px;
-            border-bottom-color: transparent;
-            z-index: -1;
-            -webkit-transform: rotate(360deg);
-            -moz-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
-          }
+        float: left;
+        width: 100px;
+        height: 94px;
+        padding-top: 18px;
+        padding-right: 1px;
+        background-color: #580000;
 
         img {
-            width: 85%;
+            width: 90%;
             display: block;
             margin: 0 auto; 
         }
@@ -78,18 +49,20 @@ header {
         }
     }
 
+
     nav {
         font-family: $sans;
-        margin-left: 12em;
+        margin-left: 10em;
+        padding-top: 35px;
 
         ul {
-            margin: 3.25em 0 0;
+            margin: 0;
             padding: 0;
 
             li{
                 position: relative;
                 display: inline;
-                margin-right: 4.5em;
+                margin-right: 3em;
                 text-align: center;
 
                 span{
@@ -115,14 +88,19 @@ header {
                     color: darken(white, 15%);
                     background-color: transparent;
                     text-transform: uppercase;
-                    text-shadow: 0 3px 1px darkRed;
+                    text-shadow: 0 1px 1px darkRed;
+
+                    &:hover {
+                        color: white;
+                    }
+                        
                 }
             }
         }
     }
 }
 
-#main {
+#image {
     font-size: 15/16 * 1em;
     $fsz: 15;
 
@@ -137,10 +115,6 @@ header {
     
     min-height: 100%;
     *height: 100%;
-
-    &.servicos {
-        background-image: url(/i/r1.jpg);    
-    }
 
     #halftone{
         position: absolute;
@@ -172,6 +146,7 @@ footer {
         display: inline;
         float:right;
         height: 30/$fsz * 1em;
+        white-space: nowrap;
 
         span {
             margin-right: 0.5em;
@@ -187,8 +162,52 @@ footer {
                 height: 26px;
             }
             &.t {
-                height: 22px;
+                position: relative;
+                top: -2px;
+                height: 18px;
             }
         }
+    }
+}
+
+article {
+    position: absolute;
+    top: 10em;
+
+    section{
+        width: 50%;
+    }
+    
+}
+
+// ================================================
+// Page specific style
+// ================================================
+
+#servicos {
+    background-color: rgb(242, 240, 237);
+
+    header {
+        background-image: url(/i/header_servicos.png);
+        // background-color: rgba(white, 0.7);
+        nav {
+
+            a {
+                color: lighten(black, 20%);
+
+                &:hover {
+                    color: rgb(223, 150, 78);
+                    text-shadow: 0 1px 1px black;
+                }
+                
+            }
+        }
+    }
+
+    #image {
+        position: fixed;
+        
+        background-image: url(/i/r2.jpg);
+        background-position: 160px center;
     }
 }

@@ -135,7 +135,7 @@ section.page {
     }
 
     nav a {
-        color: #D9D9D9;
+        color: lighten(black, 75%);
 
         &:hover {
             color: white;
