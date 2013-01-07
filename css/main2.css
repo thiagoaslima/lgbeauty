@@ -746,7 +746,7 @@ header {
 }
 /* line 30, ../scss/main2.scss */
 header nav {
-  font-family: "Gudea", Tahoma, sans-serif;
+  font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   font-weight: bold;
   margin-left: 200px;
   padding-top: 60px;

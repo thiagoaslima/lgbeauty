@@ -768,7 +768,7 @@ header figure img {
 }
 /* line 53, ../scss/main.scss */
 header nav {
-  font-family: "Gudea", Tahoma, sans-serif;
+  font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   margin-left: 10em;
   padding-top: 35px;
 }
@@ -842,7 +842,7 @@ header nav ul li a:hover {
 
 /* line 128, ../scss/main.scss */
 footer {
-  font-family: "Gudea", Tahoma, sans-serif;
+  font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.8125em;
   line-height: 2.30769em;
   background-color: #d9d9d9;

@@ -7,6 +7,11 @@ switch ($page) {
         $id = 'id="servicos"';
         $home_link = '<a href="index.php"><img src="i/logo_v.png" alt=""></a>';
         break;
+
+    case '/equipe.php':
+        $id = 'id="equipe"';
+        $home_link = '<a href="index.php"><img src="i/logo_v.png" alt=""></a>';
+        break;
     
     default:
         $id = 'id="home"';
@@ -26,7 +31,7 @@ switch ($page) {
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <!-- <link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic' rel='stylesheet' type='text/css'> -->
+        <link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main3.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>

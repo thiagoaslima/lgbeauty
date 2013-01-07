@@ -574,16 +574,16 @@ header figure h1 {
   width: 1px;
 }
 /* line 48, ../scss/h5bp_helpers.scss */
-header, header nav {
+header, header nav, #info article {
   *zoom: 1;
 }
 /* line 49, ../scss/h5bp_helpers.scss */
-header:before, header nav:before {
+header:before, header nav:before, #info article:before {
   content: " ";
   display: table;
 }
 /* line 53, ../scss/h5bp_helpers.scss */
-header:after, header nav:after {
+header:after, header nav:after, #info article:after {
   content: " ";
   display: table;
   clear: both;
@@ -729,18 +729,18 @@ a {
    Author's custom styles
    ========================================================================== */
 /* line 13, ../scss/main3.scss */
-.content {
+.content, #info {
   width: 80%;
   margin: 0 auto;
   height: 100%;
 }
 /* line 18, ../scss/main3.scss */
-.lt-ie9 .content {
+.lt-ie9 .content, .lt-ie9 #info {
   width: 960px;
 }
 @media (max-width: 500px) {
   /* line 13, ../scss/main3.scss */
-  .content {
+  .content, #info {
     width: 100%;
   }
 }
@@ -829,7 +829,7 @@ header figure img {
 }
 /* line 100, ../scss/main3.scss */
 header nav {
-  font-family: "Gudea", Tahoma, sans-serif;
+  font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   margin-left: 10em;
   padding-top: 35px;
 }
@@ -955,19 +955,28 @@ header nav ul li a:hover {
 
 /* line 220, ../scss/main3.scss */
 #info {
+  font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   padding-top: 10em;
   padding-bottom: 4em;
   color: white;
-  margin-left: 10%;
 }
 @media (max-width: 500px) {
   /* line 220, ../scss/main3.scss */
   #info {
     padding-top: 8em;
     padding-bottom: 7em;
+    width: 80%;
+  }
+  /* line 232, ../scss/main3.scss */
+  #info .header {
+    height: 50px;
+  }
+  /* line 235, ../scss/main3.scss */
+  #info p.links {
+    display: none;
   }
 }
-/* line 231, ../scss/main3.scss */
+/* line 240, ../scss/main3.scss */
 #info article {
   font-size: 0.8125em;
   width: 40%;
@@ -975,54 +984,121 @@ header nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: #444;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 0 30px;
 }
-/* line 240, ../scss/main3.scss */
-#info article h2 {
-  font-size: 1.2em;
-  font-weight: bold;
+@media (max-width: 1200px) {
+  /* line 240, ../scss/main3.scss */
+  #info article {
+    width: 100%;
+  }
+}
+/* line 254, ../scss/main3.scss */
+#info article .header {
+  height: 105px;
+  padding: 20px 0 30px;
+}
+@media (max-width: 500px) {
+  /* line 254, ../scss/main3.scss */
+  #info article .header {
+    height: 50px;
+  }
+}
+/* line 262, ../scss/main3.scss */
+#info article .header h2 {
+  font-size: 1.15385em;
+  font-weight: normal;
   text-transform: uppercase;
-  color: darkRed;
-  margin: 0;
+  color: #8B0000;
+  margin: 0 0 30px;
 }
-/* line 249, ../scss/main3.scss */
+/* line 270, ../scss/main3.scss */
+#info article .header .links {
+  text-align: justify;
+}
+@media (max-width: 500px) {
+  /* line 270, ../scss/main3.scss */
+  #info article .header .links {
+    display: none;
+  }
+}
+/* line 277, ../scss/main3.scss */
+#info article .header .links:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+/* line 283, ../scss/main3.scss */
+#info article .header .links a {
+  color: #8B0000;
+  padding: 0 2px;
+  font-weight: bold;
+}
+/* line 289, ../scss/main3.scss */
+#info article .header .links a:hover {
+  color: white;
+  background-color: #8B0000;
+}
+/* line 294, ../scss/main3.scss */
+#info article .header .links a.disabled {
+  color: gray;
+  cursor: default;
+}
+/* line 298, ../scss/main3.scss */
+#info article .header .links a.disabled:hover {
+  background-color: transparent;
+}
+/* line 305, ../scss/main3.scss */
 #info article h3 {
   font-size: 1.3em;
   font-style: italic;
   line-height: 1.6em;
   margin-bottom: 0.4em;
   border-top: 1px dotted darkRed;
+  clear: both;
 }
-/* line 257, ../scss/main3.scss */
-#info article section {
+
+/* line 318, ../scss/main3.scss */
+#servicos #info section {
   width: 99%;
   margin-top: 2.5em;
 }
-/* line 261, ../scss/main3.scss */
-#info article section.first {
+/* line 322, ../scss/main3.scss */
+#servicos #info section.first {
   margin-top: 0;
 }
-/* line 265, ../scss/main3.scss */
-#info article section p {
+/* line 326, ../scss/main3.scss */
+#servicos #info section p {
   margin-top: 0;
-}
-@media (max-width: 500px) {
-  /* line 231, ../scss/main3.scss */
-  #info article {
-    width: 80%;
-    padding: 10px;
-  }
 }
 @media (min-width: 500px) and (max-width: 800px) {
-  /* line 231, ../scss/main3.scss */
-  #info article {
+  /* line 317, ../scss/main3.scss */
+  #servicos #info {
     width: 65%;
   }
 }
 
-/* line 281, ../scss/main3.scss */
+/* line 339, ../scss/main3.scss */
+#equipe #info section {
+  float: left;
+  width: 44%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+}
+@media (max-width: 750px) {
+  /* line 339, ../scss/main3.scss */
+  #equipe #info section {
+    width: 99%;
+  }
+}
+/* line 350, ../scss/main3.scss */
+#equipe #info img {
+  float: left;
+  max-width: 45%;
+}
+
+/* line 357, ../scss/main3.scss */
 footer {
-  font-family: "Gudea", Tahoma, sans-serif;
+  font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.8125em;
   font-style: normal;
   font-weight: normal;
@@ -1034,125 +1110,146 @@ footer {
   background-color: #d9d9d9;
 }
 @media (max-width: 500px) {
-  /* line 281, ../scss/main3.scss */
+  /* line 357, ../scss/main3.scss */
   footer {
     height: 4em;
   }
 }
-/* line 298, ../scss/main3.scss */
+/* line 374, ../scss/main3.scss */
 footer p {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 303, ../scss/main3.scss */
+/* line 379, ../scss/main3.scss */
 .lt-ie8 footer p {
   padding-right: 70px;
 }
 @media (max-width: 500px) {
-  /* line 298, ../scss/main3.scss */
+  /* line 374, ../scss/main3.scss */
   footer p {
     display: block;
     margin-bottom: 10px;
   }
 }
-/* line 312, ../scss/main3.scss */
+/* line 388, ../scss/main3.scss */
 footer p strong {
   font-style: normal;
   font-weight: bold;
   display: none;
 }
 @media (min-width: 1200px) {
-  /* line 312, ../scss/main3.scss */
+  /* line 388, ../scss/main3.scss */
   footer p strong {
     display: inline;
   }
 }
-/* line 321, ../scss/main3.scss */
+/* line 397, ../scss/main3.scss */
 footer p strong:after {
   content: " | ";
   font-weight: normal;
 }
-/* line 328, ../scss/main3.scss */
+/* line 404, ../scss/main3.scss */
 footer aside {
   display: inline;
   float: right;
   height: 2em;
   white-space: nowrap;
 }
-/* line 334, ../scss/main3.scss */
+/* line 410, ../scss/main3.scss */
 .lt-ie8 footer aside {
   float: none;
 }
-/* line 338, ../scss/main3.scss */
+/* line 414, ../scss/main3.scss */
 footer aside span {
   margin-right: 0.5em;
 }
-/* line 342, ../scss/main3.scss */
+/* line 418, ../scss/main3.scss */
 footer aside img {
   display: inline;
 }
-/* line 345, ../scss/main3.scss */
+/* line 421, ../scss/main3.scss */
 footer aside img.f {
   position: relative;
   top: -1px;
   height: 17px;
 }
-/* line 350, ../scss/main3.scss */
+/* line 426, ../scss/main3.scss */
 footer aside img.m {
   position: relative;
   top: -2px;
   height: 18px;
 }
-/* line 355, ../scss/main3.scss */
+/* line 431, ../scss/main3.scss */
 footer aside img.t {
   position: relative;
   top: -1px;
   height: 18px;
 }
 @media (max-width: 500px) {
-  /* line 328, ../scss/main3.scss */
+  /* line 404, ../scss/main3.scss */
   footer aside {
     display: block;
     float: none;
   }
 }
 
-/* line 374, ../scss/main3.scss */
+/* line 450, ../scss/main3.scss */
 #home header {
   background-color: transparent;
 }
-/* line 378, ../scss/main3.scss */
+/* line 454, ../scss/main3.scss */
 #home nav a {
   color: #bfbfbf;
 }
-/* line 381, ../scss/main3.scss */
+/* line 457, ../scss/main3.scss */
 #home nav a:hover {
   color: white;
 }
-/* line 386, ../scss/main3.scss */
+/* line 462, ../scss/main3.scss */
 #home .page {
   top: -9em;
   background-color: black;
 }
 
-/* line 394, ../scss/main3.scss */
+/* line 470, ../scss/main3.scss */
 #servicos header {
   background-image: url(/i/header_servicos.png);
 }
-/* line 399, ../scss/main3.scss */
+/* line 475, ../scss/main3.scss */
 #servicos header nav a {
   color: #333333;
   text-shadow: none;
 }
-/* line 403, ../scss/main3.scss */
+/* line 479, ../scss/main3.scss */
 #servicos header nav a:hover {
   color: #df964e;
   text-shadow: none;
 }
-/* line 412, ../scss/main3.scss */
+/* line 488, ../scss/main3.scss */
 #servicos #bg {
   background-color: #f2f0ed;
   background-image: url(/i/r4.jpg);
+  background-position: right center;
+}
+
+/* line 497, ../scss/main3.scss */
+#equipe header {
+  background-image: url(/i/header_servicos.png);
+}
+/* line 502, ../scss/main3.scss */
+#equipe header nav a {
+  color: #333333;
+  text-shadow: none;
+}
+/* line 506, ../scss/main3.scss */
+#equipe header nav a:hover {
+  color: #df964e;
+  text-shadow: none;
+}
+/* line 515, ../scss/main3.scss */
+#equipe #bg {
+  background-color: #f2f0ed;
+  background-image: url(/i/m1.jpg);
   background-position: right center;
 }
