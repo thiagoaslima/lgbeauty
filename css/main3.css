@@ -782,8 +782,8 @@ header figure {
   background-color: #580000;
 }
 /* line 56, ../scss/main3.scss */
-header figure .lt-ie8 {
-  height: 82px;
+.lt-ie8 header figure {
+  height: 82px !important;
 }
 @media (max-width: 500px) {
   /* line 47, ../scss/main3.scss */
@@ -931,6 +931,10 @@ header nav ul li a:hover {
   -moz-background-size: 3px;
   background-size: 3px;
 }
+/* line 197, ../scss/main3.scss */
+.lt-ie9 #bg #halftone {
+  background-image: url(/i/dotsie.png);
+}
 @media (min-width: 1600px) {
   /* line 188, ../scss/main3.scss */
   #bg #halftone {
@@ -939,7 +943,7 @@ header nav ul li a:hover {
     background-size: 4px;
   }
 }
-/* line 204, ../scss/main3.scss */
+/* line 208, ../scss/main3.scss */
 #bg.out {
   -webkit-transform: translate(100%);
   -moz-transform: translate(100%);
@@ -953,7 +957,7 @@ header nav ul li a:hover {
   transition: translate 10s;
 }
 
-/* line 220, ../scss/main3.scss */
+/* line 224, ../scss/main3.scss */
 #info {
   font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   padding-top: 10em;
@@ -961,22 +965,22 @@ header nav ul li a:hover {
   color: white;
 }
 @media (max-width: 500px) {
-  /* line 220, ../scss/main3.scss */
+  /* line 224, ../scss/main3.scss */
   #info {
     padding-top: 8em;
     padding-bottom: 7em;
     width: 80%;
   }
-  /* line 232, ../scss/main3.scss */
+  /* line 236, ../scss/main3.scss */
   #info .header {
     height: 50px;
   }
-  /* line 235, ../scss/main3.scss */
+  /* line 239, ../scss/main3.scss */
   #info p.links {
     display: none;
   }
 }
-/* line 240, ../scss/main3.scss */
+/* line 244, ../scss/main3.scss */
 #info article {
   font-size: 0.8125em;
   width: 40%;
@@ -987,23 +991,31 @@ header nav ul li a:hover {
   border-radius: 0 30px;
 }
 @media (max-width: 1200px) {
-  /* line 240, ../scss/main3.scss */
+  /* line 244, ../scss/main3.scss */
   #info article {
     width: 100%;
   }
 }
-/* line 254, ../scss/main3.scss */
+/* line 258, ../scss/main3.scss */
+.lt-ie9 #info article {
+  width: 45%;
+}
+/* line 262, ../scss/main3.scss */
 #info article .header {
   height: 105px;
   padding: 20px 0 30px;
 }
+/* line 266, ../scss/main3.scss */
+.lt-ie9 #info article .header {
+  padding-bottom: 0;
+}
 @media (max-width: 500px) {
-  /* line 254, ../scss/main3.scss */
+  /* line 262, ../scss/main3.scss */
   #info article .header {
     height: 50px;
   }
 }
-/* line 262, ../scss/main3.scss */
+/* line 274, ../scss/main3.scss */
 #info article .header h2 {
   font-size: 1.15385em;
   font-weight: normal;
@@ -1011,43 +1023,43 @@ header nav ul li a:hover {
   color: #8B0000;
   margin: 0 0 30px;
 }
-/* line 270, ../scss/main3.scss */
+/* line 282, ../scss/main3.scss */
 #info article .header .links {
   text-align: justify;
 }
 @media (max-width: 500px) {
-  /* line 270, ../scss/main3.scss */
+  /* line 282, ../scss/main3.scss */
   #info article .header .links {
     display: none;
   }
 }
-/* line 277, ../scss/main3.scss */
+/* line 289, ../scss/main3.scss */
 #info article .header .links:after {
   content: "";
   display: inline-block;
   width: 100%;
 }
-/* line 283, ../scss/main3.scss */
+/* line 295, ../scss/main3.scss */
 #info article .header .links a {
   color: #8B0000;
   padding: 0 2px;
   font-weight: bold;
 }
-/* line 289, ../scss/main3.scss */
+/* line 301, ../scss/main3.scss */
 #info article .header .links a:hover {
   color: white;
   background-color: #8B0000;
 }
-/* line 294, ../scss/main3.scss */
+/* line 306, ../scss/main3.scss */
 #info article .header .links a.disabled {
   color: gray;
   cursor: default;
 }
-/* line 298, ../scss/main3.scss */
+/* line 310, ../scss/main3.scss */
 #info article .header .links a.disabled:hover {
   background-color: transparent;
 }
-/* line 305, ../scss/main3.scss */
+/* line 317, ../scss/main3.scss */
 #info article h3 {
   font-size: 1.3em;
   font-style: italic;
@@ -1057,27 +1069,35 @@ header nav ul li a:hover {
   clear: both;
 }
 
-/* line 318, ../scss/main3.scss */
+/* line 332, ../scss/main3.scss */
 #servicos #info section {
   width: 99%;
   margin-top: 2.5em;
 }
-/* line 322, ../scss/main3.scss */
+/* line 336, ../scss/main3.scss */
 #servicos #info section.first {
   margin-top: 0;
 }
-/* line 326, ../scss/main3.scss */
+/* line 340, ../scss/main3.scss */
 #servicos #info section p {
   margin-top: 0;
 }
 @media (min-width: 500px) and (max-width: 800px) {
-  /* line 317, ../scss/main3.scss */
+  /* line 330, ../scss/main3.scss */
   #servicos #info {
     width: 65%;
   }
 }
 
-/* line 339, ../scss/main3.scss */
+/* line 354, ../scss/main3.scss */
+#equipe.lt-ie9 .header {
+  height: 60px;
+}
+/* line 358, ../scss/main3.scss */
+#equipe.lt-ie9 #info section {
+  width: 90%;
+}
+/* line 364, ../scss/main3.scss */
 #equipe #info section {
   float: left;
   width: 44%;
@@ -1085,18 +1105,18 @@ header nav ul li a:hover {
   margin-bottom: 25px;
 }
 @media (max-width: 750px) {
-  /* line 339, ../scss/main3.scss */
+  /* line 364, ../scss/main3.scss */
   #equipe #info section {
     width: 99%;
   }
 }
-/* line 350, ../scss/main3.scss */
+/* line 375, ../scss/main3.scss */
 #equipe #info img {
   float: left;
   max-width: 45%;
 }
 
-/* line 357, ../scss/main3.scss */
+/* line 382, ../scss/main3.scss */
 footer {
   font-family: "Gudea", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.8125em;
@@ -1110,144 +1130,139 @@ footer {
   background-color: #d9d9d9;
 }
 @media (max-width: 500px) {
-  /* line 357, ../scss/main3.scss */
+  /* line 382, ../scss/main3.scss */
   footer {
     height: 4em;
   }
 }
-/* line 374, ../scss/main3.scss */
+/* line 399, ../scss/main3.scss */
 footer p {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 379, ../scss/main3.scss */
+/* line 404, ../scss/main3.scss */
 .lt-ie8 footer p {
   padding-right: 70px;
 }
 @media (max-width: 500px) {
-  /* line 374, ../scss/main3.scss */
+  /* line 399, ../scss/main3.scss */
   footer p {
     display: block;
     margin-bottom: 10px;
   }
 }
-/* line 388, ../scss/main3.scss */
+/* line 413, ../scss/main3.scss */
 footer p strong {
   font-style: normal;
   font-weight: bold;
   display: none;
 }
 @media (min-width: 1200px) {
-  /* line 388, ../scss/main3.scss */
+  /* line 413, ../scss/main3.scss */
   footer p strong {
     display: inline;
   }
 }
-/* line 397, ../scss/main3.scss */
-footer p strong:after {
-  content: " | ";
-  font-weight: normal;
-}
-/* line 404, ../scss/main3.scss */
+/* line 424, ../scss/main3.scss */
 footer aside {
   display: inline;
   float: right;
   height: 2em;
   white-space: nowrap;
 }
-/* line 410, ../scss/main3.scss */
+/* line 430, ../scss/main3.scss */
 .lt-ie8 footer aside {
   float: none;
 }
-/* line 414, ../scss/main3.scss */
+/* line 434, ../scss/main3.scss */
 footer aside span {
   margin-right: 0.5em;
 }
-/* line 418, ../scss/main3.scss */
+/* line 438, ../scss/main3.scss */
 footer aside img {
   display: inline;
 }
-/* line 421, ../scss/main3.scss */
+/* line 441, ../scss/main3.scss */
 footer aside img.f {
   position: relative;
   top: -1px;
   height: 17px;
 }
-/* line 426, ../scss/main3.scss */
+/* line 446, ../scss/main3.scss */
 footer aside img.m {
   position: relative;
   top: -2px;
   height: 18px;
 }
-/* line 431, ../scss/main3.scss */
+/* line 451, ../scss/main3.scss */
 footer aside img.t {
   position: relative;
   top: -1px;
   height: 18px;
 }
 @media (max-width: 500px) {
-  /* line 404, ../scss/main3.scss */
+  /* line 424, ../scss/main3.scss */
   footer aside {
     display: block;
     float: none;
   }
 }
 
-/* line 450, ../scss/main3.scss */
+/* line 470, ../scss/main3.scss */
 #home header {
   background-color: transparent;
 }
-/* line 454, ../scss/main3.scss */
+/* line 474, ../scss/main3.scss */
 #home nav a {
   color: #bfbfbf;
 }
-/* line 457, ../scss/main3.scss */
+/* line 477, ../scss/main3.scss */
 #home nav a:hover {
   color: white;
 }
-/* line 462, ../scss/main3.scss */
+/* line 482, ../scss/main3.scss */
 #home .page {
   top: -9em;
   background-color: black;
 }
 
-/* line 470, ../scss/main3.scss */
+/* line 490, ../scss/main3.scss */
 #servicos header {
   background-image: url(/i/header_servicos.png);
 }
-/* line 475, ../scss/main3.scss */
+/* line 495, ../scss/main3.scss */
 #servicos header nav a {
   color: #333333;
   text-shadow: none;
 }
-/* line 479, ../scss/main3.scss */
+/* line 499, ../scss/main3.scss */
 #servicos header nav a:hover {
   color: #df964e;
   text-shadow: none;
 }
-/* line 488, ../scss/main3.scss */
+/* line 508, ../scss/main3.scss */
 #servicos #bg {
   background-color: #f2f0ed;
   background-image: url(/i/r4.jpg);
   background-position: right center;
 }
 
-/* line 497, ../scss/main3.scss */
+/* line 517, ../scss/main3.scss */
 #equipe header {
   background-image: url(/i/header_servicos.png);
 }
-/* line 502, ../scss/main3.scss */
+/* line 522, ../scss/main3.scss */
 #equipe header nav a {
   color: #333333;
   text-shadow: none;
 }
-/* line 506, ../scss/main3.scss */
+/* line 526, ../scss/main3.scss */
 #equipe header nav a:hover {
   color: #df964e;
   text-shadow: none;
 }
-/* line 515, ../scss/main3.scss */
+/* line 535, ../scss/main3.scss */
 #equipe #bg {
   background-color: #f2f0ed;
   background-image: url(/i/m1.jpg);

@@ -1,6 +1,6 @@
 <footer>
     <div class="content">
-        <p><strong>Galeria Central de Compras Leblon</strong>Av. Ataulfo de Paiva, 566 sl. 217</p>
+        <p><strong>Galeria Central de Compras Leblon | </strong>Av. Ataulfo de Paiva, 566 sl. 217</p>
         <aside>
             <span class="down-600">
                 <a href="tel:2187228647">
